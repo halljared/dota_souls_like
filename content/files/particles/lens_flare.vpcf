@@ -1,0 +1,72 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_flConstantRadius = 700.000000
+	m_flConstantRotation = 1.000000
+	m_flConstantRotationSpeed = 1.000000
+	m_flConstantLifespan = 4.000000
+	m_nConstantSequenceNumber = 1
+	m_Operators =
+	[
+		{
+			_class = "C_OP_OscillateScalarSimple"
+			m_Rate = 150.000000
+			m_nField = 3
+		},
+		{
+			_class = "C_OP_SpinUpdate"
+		},
+		{
+			_class = "C_OP_FadeAndKill"
+			m_flEndFadeInTime = 0.250000
+			m_flStartFadeOutTime = 0.750000
+			m_flStartAlpha = 0.000000
+		},
+		{
+			_class = "C_OP_PositionLock"
+		},
+		{
+			_class = "C_OP_EndCapTimedDecay"
+		},
+	]
+	m_Renderers =
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_bAdditive = true
+			m_flOverbrightFactor = 3.000000
+			m_hTexture = resource:"materials/particle/lens_flare/lens_flare.vtex"
+		},
+	]
+	m_Initializers =
+	[
+		{
+			_class = "C_INIT_PositionOffset"
+			m_OffsetMin =
+			[
+				0.000000,
+				0.000000,
+				100.000000,
+			]
+			m_OffsetMax =
+			[
+				0.000000,
+				0.000000,
+				100.000000,
+			]
+		},
+		{
+			_class = "C_INIT_RingWave"
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+	]
+	m_Emitters =
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 1
+		},
+	]
+}

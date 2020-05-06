@@ -1,0 +1,117 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf26:version{26288658-411e-4f14-b698-2e1e5d00dec6} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_flConstantRadius = 150.0
+	m_flConstantLifespan = 7.0
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_FadeAndKill"
+			m_flEndFadeInTime = 0.2
+			m_flStartAlpha = 0.0
+		},
+		{
+			_class = "C_OP_BasicMovement"
+		},
+		{
+			_class = "C_OP_ColorInterpolate"
+			m_ColorFade = [ 109, 134, 255, 255 ]
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flStartTime = 0.1
+			m_flEndScale = 4.0
+			m_bEaseInAndOut = true
+		},
+		{
+			_class = "C_OP_SpinUpdate"
+		},
+	]
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_nOrientationType = 2
+			m_flAnimationRate = 0.5
+			m_hTexture = resource:"materials/particle/snowflake/snowflakes_01.vtex"
+			m_bAdditive = true
+			m_flOverbrightFactor = 0.4
+		},
+	]
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RingWave"
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		{
+			_class = "C_INIT_RemapInitialCPDirectionToRotation"
+			m_flOffsetRot = 90.0
+		},
+		{
+			_class = "C_INIT_MoveBetweenPoints"
+			m_flSpeedMin = 800.0
+			m_flSpeedMax = 800.0
+		},
+		{
+			_class = "C_INIT_PositionOffset"
+			m_OffsetMin = [ 0.0, 0.0, 50.0 ]
+			m_OffsetMax = [ 0.0, 0.0, 50.0 ]
+		},
+	]
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmitRate = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 50.0
+			}
+		},
+	]
+	m_ConstantColor = [ 134, 214, 255, 255 ]
+	m_flConstantRotation = 1.0
+	m_flConstantRotationSpeed = 1.0
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/ice_cone/snow_flakes.vpcf"
+			m_bDisableChild = true
+		},
+	]
+	m_PreEmissionOperators = 
+	[
+		{
+			_class = "C_OP_SetControlPointPositions"
+			m_vecCP1Pos = [ 0.0, 600.0, 0.0 ]
+			m_bDisableOperator = true
+		},
+	]
+	m_nBehaviorVersion = 10
+	m_nFirstMultipleOverride_BackwardCompat = 4
+	m_controlPointConfigurations = 
+	[
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = [ 0.0, 0.0, 0.0 ]
+					m_angOffset = [ null, null, null ]
+					m_entityName = "self"
+				},
+				{
+					m_iControlPoint = 1
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = [ 0.0, 0.0, 0.0 ]
+					m_angOffset = [ null, null, null ]
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+}

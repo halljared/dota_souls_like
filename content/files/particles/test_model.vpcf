@@ -1,0 +1,136 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_ConstantColor =
+	[
+		255,
+		255,
+		255,
+		0,
+	]
+	m_flConstantRadius = 1.000000
+	m_flConstantLifespan = 0.500000
+	m_nConstantSequenceNumber = 1
+	m_Operators =
+	[
+		{
+			_class = "C_OP_BasicMovement"
+		},
+		{
+			_class = "C_OP_FadeAndKill"
+			m_flEndFadeOutTime = 0.700000
+			m_flStartAlpha = 0.000000
+		},
+		{
+			_class = "C_OP_PositionLock"
+			m_bDisableOperator = true
+		},
+		{
+			_class = "C_OP_OscillateScalar"
+			m_RateMax = 1.000000
+			m_nField = 3
+			m_bDisableOperator = true
+		},
+		{
+			_class = "C_OP_OscillateVector"
+			m_RateMin =
+			[
+				-1.000000,
+				-1.000000,
+				0.000000,
+			]
+			m_RateMax =
+			[
+				1.000000,
+				1.000000,
+				0.000000,
+			]
+			m_bDisableOperator = true
+		},
+		{
+			_class = "C_OP_RemapCPOrientationToRotations"
+			m_vecRotation =
+			[
+				0.000000,
+				-90.000000,
+				0.000000,
+			]
+			m_bDisableOperator = true
+		},
+		{
+			_class = "C_OP_EndCapTimedDecay"
+			m_bDisableOperator = true
+		},
+	]
+	m_Renderers =
+	[
+		{
+			_class = "C_OP_RenderModels"
+			m_ActivityName = "ACT_DOTA_RUN"
+			m_ModelList =
+			[
+				{
+					m_model = resource:"models/heroes/witchdoctor/witchdoctor.vmdl"
+				},
+			]
+			m_bOrientZ = true
+			m_nLOD = 1
+			m_hOverrideMaterial = resource:"materials/models/items/death_prophet/hecate_ghosts/hecate_ghosts.vmat"
+			m_bAnimated = true
+		},
+	]
+	m_Initializers =
+	[
+		{
+			_class = "C_INIT_RingWave"
+		},
+		{
+			_class = "C_INIT_VelocityRandom"
+			m_LocalCoordinateSystemSpeedMin =
+			[
+				-400.000000,
+				-400.000000,
+				0.000000,
+			]
+			m_LocalCoordinateSystemSpeedMax =
+			[
+				400.000000,
+				400.000000,
+				400.000000,
+			]
+			m_bDisableOperator = true
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+			m_nFieldOutput = 12
+			m_bDisableOperator = true
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 0.500000
+			m_fLifetimeMax = 0.500000
+			m_bDisableOperator = true
+		},
+		{
+			_class = "C_INIT_RemapInitialCPDirectionToRotation"
+			m_nFieldOutput = 12
+			m_flOffsetRot = 90.000000
+		},
+	]
+	m_Emitters =
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 1
+			m_bDisableOperator = true
+		},
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmitRate = 20.000000
+		},
+		{
+			_class = "C_OP_MaintainEmitter"
+			m_bDisableOperator = true
+		},
+	]
+}

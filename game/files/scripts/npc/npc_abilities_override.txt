@@ -1,0 +1,116 @@
+
+// Dota Abilities Override File
+"DOTAAbilities"
+{
+	"Version"   "1"
+
+	"dazzle_shadow_wave"
+	{
+		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"0"
+		"OverrideAnimation"				"ACT_DOTA_CAST_ABILITY_1"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+
+		"MaxLevel"						"1"
+
+		"precache"
+		{
+			"particle"	"particles/units/heroes/hero_dazzle/dazzle_shadow_wave.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_dazzle.vsndevts"
+		}
+	}
+
+	"riki_smoke_screen"
+	{
+		"AbilityManaCost"				"30"
+		"AbilityCooldown"				"15"
+		"OverrideAnimation"				"ACT_DOTA_CAST_ABILITY_1"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+
+		"MaxLevel"						"1"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"325"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"miss_rate"					"60"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"movement_speed_reduction"	"25"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"attack_speed_reduction"	"25"
+			}
+		}
+	}
+
+	"antimage_blink"
+	{
+		"AbilityManaCost"				"40"
+		"AbilityCooldown"				"0"
+		"AbilityCastPoint"				".1"
+		"MaxLevel"						"1"
+		"AbilityCastRange"				"1000"
+	}
+
+	"death_prophet_carrion_swarm"
+	{
+		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"0"
+		"MaxLevel"						"1"
+		"AbilityCastRange"				"1000"
+	}
+
+	"lycan_shapeshift"
+	{
+		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"30"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+
+		"MaxLevel"						"1"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"18.0"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"speed"						"650"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_night_vision"		"1000"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"crit_chance"				"30"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"crit_damage"				"170"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"transformation_time"		"1.5"
+			}
+		}
+	}
+}

@@ -1,0 +1,296 @@
+"DOTAHeroes"
+{
+	"npc_dota_hero_witch_doctor_custom"
+	{
+		"AbilityLayout"					"5"
+		"override_hero"					"npc_dota_hero_witch_doctor"
+		"Ability1"						"shadow_bolt"
+		"Ability2"						"holy_form"
+		"Ability3"						"dazzle_shadow_wave"
+		"Ability4"						"purge_heal"
+		"Ability5"						"holy_nova"
+		"Ability6"						""
+		"Ability7"						""
+
+		"ArmorPhysical"					"0"
+		"MagicalResistance"				"0"
+
+		"AttackDamageMin"				"100"
+		"AttackDamageMax"				"100"
+		"AttackRate"					"1.0"
+
+		//"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLIGENCE"
+		"AttributeBaseStrength"			"0"
+		"AttributeStrengthGain"			"0"
+		"AttributeBaseIntelligence"		"0"
+		"AttributeIntelligenceGain"		"0"
+		"AttributeBaseAgility"			"0"
+		"AttributeAgilityGain"			"0"
+
+		"BountyXP"						"0"
+		"BountyGoldMin"					"0"
+		"BountyGoldMax"					"0"
+
+		//"BoundsHullName"				"DOTA_HULL_SIZE_HERO"
+		//"RingRadius"					"70"
+
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"					"360"
+		"MovementTurnRate"				"1.0"
+
+		"StatusHealth"					"1000"
+		"StatusHealthRegen"				"5.0"
+		"StatusMana"					"100"
+		"StatusManaRegen"				"10.0"
+
+		"VisionDaytimeRange"			"1800"
+		"VisionNighttimeRange"			"1800"
+
+		"SoundSet"						"Hero_Invoker"
+		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_invoker.vsndevts"
+	}
+
+	"npc_dota_hero_templar_assassin_custom"
+	{
+		"AbilityLayout"					"5"
+		"override_hero"					"npc_dota_hero_templar_assassin"
+		"Ability1"						"electric_fence"
+		"Ability2"						"templar_assassin_blink"
+		"Ability3"						"riki_smoke_screen"
+		"Ability4"						"crippling_attacks"
+		"Ability5"						"fury_swipes"
+		"Ability6"						""
+		"Ability7"						""
+
+		"ArmorPhysical"					"0"
+		"MagicalResistance"				"0"
+
+		"AttackCapabilities"			"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"				"100"
+		"AttackDamageMax"				"100"
+		"AttackRate"					"1.0"
+
+		//"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"			"0"
+		"AttributeStrengthGain"			"0"
+		"AttributeBaseIntelligence"		"0"
+		"AttributeIntelligenceGain"		"0"
+		"AttributeBaseAgility"			"0"
+		"AttributeAgilityGain"			"0"
+
+		"BountyXP"						"0"
+		"BountyGoldMin"					"0"
+		"BountyGoldMax"					"0"
+
+		//"BoundsHullName"				"DOTA_HULL_SIZE_HERO"
+		//"RingRadius"					"70"
+
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"					"360"
+		"MovementTurnRate"				"1.0"
+
+		"StatusHealth"					"1000"
+		"StatusHealthRegen"				"5.0"
+		"StatusMana"					"100"
+		"StatusManaRegen"				"10.0"
+
+		"VisionDaytimeRange"			"1800"
+		"VisionNighttimeRange"			"1800"
+
+		"SoundSet"						"Hero_TemplarAssassin"
+		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_templar_assassin.vsndevts"
+	}
+
+	"npc_dota_hero_invoker_custom"
+	{
+		"AbilityLayout"					"5"
+		"override_hero"					"npc_dota_hero_invoker"
+		"Ability1"						"deafening_blast_datadriven"
+		"Ability2"						"antimage_blink"
+		"Ability3"						"red_fireball_datadriven"
+		"Ability4"						"flamestrike_datadriven"
+		"Ability5"						"crystal_maiden_freezing_field_datadriven"
+		"Ability6"						""
+		"Ability7"						""
+
+		"ArmorPhysical"					"0"
+		"MagicalResistance"				"0"
+
+		"AttackDamageMin"				"100"
+		"AttackDamageMax"				"100"
+		"AttackRate"					"1.0"
+
+		//"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLIGENCE"
+		"AttributeBaseStrength"			"0"
+		"AttributeStrengthGain"			"0"
+		"AttributeBaseIntelligence"		"0"
+		"AttributeIntelligenceGain"		"0"
+		"AttributeBaseAgility"			"0"
+		"AttributeAgilityGain"			"0"
+
+		"BountyXP"						"0"
+		"BountyGoldMin"					"0"
+		"BountyGoldMax"					"0"
+
+		//"BoundsHullName"				"DOTA_HULL_SIZE_HERO"
+		//"RingRadius"					"70"
+
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"					"360"
+		"MovementTurnRate"				"1.0"
+
+		"StatusHealth"					"1000"
+		"StatusHealthRegen"				"5.0"
+		"StatusMana"					"100"
+		"StatusManaRegen"				"10.0"
+
+		"VisionDaytimeRange"			"1800"
+		"VisionNighttimeRange"			"1800"
+
+		"SoundSet"						"Hero_Invoker"
+		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_invoker.vsndevts"
+	}
+
+	"npc_dota_hero_omniknight_custom"
+	{
+		"AbilityLayout"					"5"
+		"override_hero"					"npc_dota_hero_omniknight"
+
+		"Ability1"						"warrior_shield_wall"
+		"Ability2"						"berserkers_call_datadriven"
+		"Ability3"						"heavy_swing"
+		"Ability4"						"sunder_armor"
+		"Ability5"						"warrior_pounce"
+		"Ability6"						""
+		"Ability7"						""
+
+		"ArmorPhysical"					"0"
+		"MagicalResistance"				"0"
+
+		"AttackDamageMin"				"100"
+		"AttackDamageMax"				"100"
+		"AttackRate"					"1.0"
+
+		"AttributePrimary"				"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"			"0"
+		"AttributeStrengthGain"			"0"
+		"AttributeBaseIntelligence"		"0"
+		"AttributeIntelligenceGain"		"0"
+		"AttributeBaseAgility"			"0"
+		"AttributeAgilityGain"			"0"
+
+		"BountyXP"						"0"
+		"BountyGoldMin"					"0"
+		"BountyGoldMax"					"0"
+
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"					"360"
+		"MovementTurnRate"				"1.0"
+
+		"StatusHealth"					"1000"
+		"StatusHealthRegen"				"5.0"
+		"StatusMana"					"100"
+		"StatusManaRegen"				"10.0"
+
+		"VisionDaytimeRange"			"1800"
+		"VisionNighttimeRange"			"1800"
+
+		"SoundSet"						"Hero_Omniknight"
+		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts"
+	}
+
+	"npc_dota_hero_rubick_custom"
+	{
+		"AbilityLayout"					"5"
+		"override_hero"					"npc_dota_hero_rubick"
+		"Ability1"						"rift_bolt"
+		"Ability2"						"tractor_beam"
+		"Ability3"						"demonic_prison"
+		"Ability4"						"spirit_swarm"
+		"Ability5"						"moving_particle_test"
+		"Ability6"						""
+		"Ability7"						""
+
+		"ArmorPhysical"					"0"
+		"MagicalResistance"				"0"
+
+		"AttackDamageMin"				"100"
+		"AttackDamageMax"				"100"
+		"AttackRate"					"1.0"
+
+		//"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLIGENCE"
+		"AttributeBaseStrength"			"0"
+		"AttributeStrengthGain"			"0"
+		"AttributeBaseIntelligence"		"0"
+		"AttributeIntelligenceGain"		"0"
+		"AttributeBaseAgility"			"0"
+		"AttributeAgilityGain"			"0"
+
+		"BountyXP"						"0"
+		"BountyGoldMin"					"0"
+		"BountyGoldMax"					"0"
+
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"					"360"
+		"MovementTurnRate"				"1.0"
+
+		"StatusHealth"					"1000"
+		"StatusHealthRegen"				"5.0"
+		"StatusMana"					"100"
+		"StatusManaRegen"				"10.0"
+
+		"VisionDaytimeRange"			"1800"
+		"VisionNighttimeRange"			"1800"
+
+		"SoundSet"						"Hero_Rubick"
+		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_rubick.vsndevts"
+	}
+
+	"npc_dota_hero_lycan_custom"
+	{
+		"AbilityLayout"					"5"
+		"override_hero"					"npc_dota_hero_lycan"
+
+		"Ability1"						"lycan_shapeshift"
+		"Ability2"						""
+		"Ability3"						""
+		"Ability4"						""
+		"Ability5"						""
+		"Ability6"						""
+		"Ability7"						""
+
+		"ArmorPhysical"					"0"
+		"MagicalResistance"				"0"
+
+		"AttackDamageMin"				"100"
+		"AttackDamageMax"				"100"
+		"AttackRate"					"1.0"
+
+		"AttributePrimary"				"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"			"0"
+		"AttributeStrengthGain"			"0"
+		"AttributeBaseIntelligence"		"0"
+		"AttributeIntelligenceGain"		"0"
+		"AttributeBaseAgility"			"0"
+		"AttributeAgilityGain"			"0"
+
+		"BountyXP"						"0"
+		"BountyGoldMin"					"0"
+		"BountyGoldMax"					"0"
+
+		"MovementCapabilities"			"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"					"360"
+		"MovementTurnRate"				"1.0"
+
+		"StatusHealth"					"1000"
+		"StatusHealthRegen"				"5.0"
+		"StatusMana"					"100"
+		"StatusManaRegen"				"10.0"
+
+		"VisionDaytimeRange"			"1800"
+		"VisionNighttimeRange"			"1800"
+
+		"SoundSet"						"Hero_Lycan"
+		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_lycan.vsndevts"
+	}
+}
